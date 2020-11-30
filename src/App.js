@@ -17,6 +17,10 @@ function App() {
             <Route exact path="/home" component={Home} />
             <Route exact path="/Portfolio" component={Portfolio} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/gh-pages-url" component={Home} />
+            <Route exact path="/gh-pages-url/home" component={Home} />
+            <Route exact path="/gh-pages-url/Portfolio" component={Portfolio} />
+            <Route exact path="/gh-pages-url/contact" component={Contact} />
             <Route component={Home} />
           </Switch>
           <Footer />
@@ -25,3 +29,8 @@ function App() {
 }
 
 export default App;
+
+// <Switch>
+// <Route path="/gh-pages-url" component={App} exact />
+// <Route path='/gh-pages-url/contacts' component={Contacts} />
+// </Switch>
